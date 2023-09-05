@@ -4,7 +4,7 @@ INTRODUCCIÓN
 
 Objetivo: Conocer la naturaleza, definición y elementos que constituyen un proceso de decisión.
 
-1.1 ¿Qué es decidir?
+## 1.1 ¿Qué es decidir?
 
 Una persona tiene un problema de decisión cuando debe elegir un curso de acción específico entre un
 conjunto de acciones posibles, con el fin de alcanzar uno o más objetivos preestablecidos.
@@ -96,17 +96,16 @@ cada playera es de $120, pero al final del verano lo que no se vendió se remata
 
 Elementos del problema:
 
-     l. Decisor:                      El propietario de la tienda
-     
-     2. Cursos de acción posibles:     a 1 ::::: pedir 100 prendas
-                                       a2 ::::: pedir 200 prendas
-                                       a3 ::::: pedir 300 prendas
-                                       
-     3. Estados de la naturaleza:      e1 ::::; demanda de 100 prendas
-                                       e2 ::::: demanda de 150 prendas
-                                       e3 ::::: demanda de 200 prendas
-                                       
-     4. Función de consecuencias:      Pago asociado con cada par (0¡, aj)
+| | |
+| ---------- | :---------- |
+| l.  Decisor: | El propietario de la tienda  |
+|  2.  Cursos de acción posibles:  |  a~1~ = pedir 100 prendas|
+||a~2~ =pedir 200 prendas|
+||a~3~ = pedir 300 prenda|
+|3.  Estados de la naturaleza:|$\theta$~1~ = demanda de 100 prendas|
+||$\theta$~2~ = demanda de 150 prendas|
+||$\theta$~3~ = demanda de 200 prendas|
+|4.  Función de consecuencias|Pago asociado con cada par ($\theta$
 
 La función de consecuencias depende de la cantidad de playeras pedidas y de la cantidad vendida 
 
@@ -120,12 +119,13 @@ c) Y si la demanda es mayor que el pedido
 
 Matriz de resultados (matriz de pagos, matriz de consecuencias, matriz de decisión)
 
-                        Acción (pedido)  a1       a2      a3
-     Estado de la naturaleza (demanda)  100      200     300
-      01=100                            2000      0       -1500
-      02=150                            1750      3000    1500
-      03=200                            1500      6000    4500
-
+|   Acción (pedido) | a~1~ |a~2~| a~3~|
+| :----------: |:-:|:-------:|:-----:|
+|Estado de la naturaleza (demanda)|100|200|300|
+|$\theta$~1~ = 100|2,000|0|-1,500|
+|$\theta$~2~ = 150|1,750|3,000|1,500|
+|$\theta$~3~ = 200|1,500|6,000|4,500|
+  
 1.6 Dominación
 Una acción está dominada por otra, si los resultados de su implementación son al menos tan. deseables
 como los resultados de otra acción pero, para al menos un estado de la naturaleza, es menos deseable. En
@@ -133,20 +133,20 @@ tal caso, la acción es inadmisible y por lo tanto puede elü~inarse de la lista
 
 En el ejemplo 1 se observa que la estrategia a3 está dominada pot la estrategia a2:
 
-                       Acción   a2       a3
-    Estado de la naturaleza 
-      01                        0   >  -1500
-      02                      3000  >   1500
-      03                      6000  >   4500
+|   Acción  | a~1~ ||a~2~|
+| :----------: |:-:|:-------:|:-:|
+|Estado de la naturaleza (demanda)|||
+|$\theta$~1~ = 100|0|>|-1,500|
+|$\theta$~2~ = 150|3,000|>|1,500|
+|$\theta$~3~ = 200|6,000|>|4,500|
 
 Por lo tanto, no es una estrategia admisible y se elimina de la matriz de pagos. Es recomendable analizar
 siempre si existen estrategias dominadas en una matriz de_ pagos y, de ser así, eliminarlas antes de iniciar el proceso de toma de decisión.
 
 La matriz de pagos que se utilizará para tomar la decisión del tamaño del pedido de playeras es:
-
-                  Acción (pedido)   a1     a2
-     Estado de la naturaleza (demanda)  100    200
-
-     01=100                            2000     0
-     02=150                            1750    3000
-     03=200                            1500    6000
+|   Acción (pedido) | a~1~ |a~2~| 
+| :----------: |:-:|:-------:|
+|Estado de la naturaleza (demanda)|100|200|
+|$\theta$~1~ = 100|2,000|0|
+|$\theta$~2~ = 150|1,750|3,000|
+|$\theta$~3~ = 200|1,500|6,000|
